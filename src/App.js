@@ -4,13 +4,13 @@
 function App() {
 
 
-
-  const tec_front = [{ nombre: 'Angular', img: 'angular.svg' },
-  { nombre: 'React', img: 'react.svg' }, { nombre: 'Tailwind', img: 'tailwind-css.svg' }];
-  const tec_back = [{ nombre: 'Java', img: 'java.svg' }, { nombre: 'Nodejs', img: 'node-js.svg' }];
-  const tec_bd = [{ nombre: 'Mongo', img: 'mongodb.svg' },
+  const techs = [[{ nombre: 'Angular', img: 'angular.svg' },
+  { nombre: 'React', img: 'react.svg' }, { nombre: 'Tailwind', img: 'tailwind-css.svg' }],
+  [{ nombre: 'Java', img: 'java.svg' }, { nombre: 'Nodejs', img: 'node-js.svg' }],
+  [{ nombre: 'Mongo', img: 'mongodb.svg' },
   { nombre: 'Firebase', img: 'firebase.svg' },
-  { nombre: 'Oracle', img: 'oracle.svg' }];
+  { nombre: 'Oracle', img: 'oracle.svg' }]
+  ];
   const tec_tools = [{ nombre: 'Git', img: 'git.svg' }];
 
   return (
@@ -190,7 +190,7 @@ function App() {
           <h1 className='text-2xl text-secondary-200 font-bold m-4 text-center  '>Tecnologias</h1>
           <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Frontend</h3>
           <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
-            {tec_front.map((tecnologia) => {
+            {techs[0].map((tecnologia) => {
               return (
                 <span
                   className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
@@ -205,7 +205,7 @@ function App() {
           </div>
           <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Backend</h3>
           <div id='etiquetas_tec_back' className='flex flex-wrap flex-row justify-around mx-4 '>
-            {tec_back.map((tecnologia) => {
+            {techs[1].map((tecnologia) => {
               return (
                 <span
                   className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
@@ -220,7 +220,7 @@ function App() {
           </div>
           <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Bases de Datos</h3>
           <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
-            {tec_bd.map((tecnologia) => {
+            {techs[2].map((tecnologia) => {
               return (
                 <span
                   className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
