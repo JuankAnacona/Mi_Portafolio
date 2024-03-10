@@ -25,7 +25,7 @@ module.exports = {
           700: '#1E0F54'
         }
       }, boxShadow: {
-        'def': '0 0px 30px -10px rgba(0, 0, 0, 0.3)',
+        'def': '0 0px 21px -10px rgba(0, 0, 0, 0.3)',
       }
 
     },
