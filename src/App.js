@@ -5,42 +5,98 @@ function App() {
 
 
 
-
+  const tec_front = [{ nombre: 'Angular', img: 'angular.svg' },
+  { nombre: 'React', img: 'react.svg' }, { nombre: 'Tailwind', img: 'tailwind-css.svg' }];
+  const tec_back = [{ nombre: 'Java', img: 'java.svg' }, { nombre: 'Nodejs', img: 'node-js.svg' }];
+  const tec_bd = [{ nombre: 'Mongo', img: 'mongodb.svg' },
+  { nombre: 'Firebase', img: 'firebase.svg' },
+  { nombre: 'Oracle', img: 'oracle.svg' }];
+  const tec_tools = [{ nombre: 'Git', img: 'git.svg' }];
 
   return (
     <div className="App rubik-font">
       <header className="App-header">
 
 
+        <nav
+          className="fixed top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-transparent  h-max bg-opacity-100 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+          <div className="flex items-center justify-between text-blue-gray-900">
+            <a href="#df"
+              className="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+              JuanK
+            </a>
+            <div className="flex items-center gap-4">
+              <div className="hidden mr-4 lg:block">
+                <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+                  <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                    <a href="#p" className="flex items-center">
+                      Mis Proyectos
+                    </a>
+                  </li>
+                  <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                    <a href="#p" className="flex items-center">
+                      Tecnologias
+                    </a>
+                  </li>
+                  <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                    <a href="#p" className="flex items-center">
+                      Formacion y Exp
+                    </a>
+                  </li>
+                  <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                    <a href="#p" className="flex items-center">
+                      Sobre mi
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+                type="button">
+                <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" stroke="currentColor"
+                    strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
       </header>
 
-      <div className='flex-col justify-center p-2 my-10'>
+      <div className='flex-col justify-center py-2 mb-10 mt-24'>
         {/* PRESENTACION*/}
-        <section className='border-2 shadow-def m-9 rounded-xl shadow-secondary-100 min-h-[500px]'>
+        <section className='border-2 shadow-def m-9 rounded-xl shadow-secondary-100 min-h-[400px]'>
           <div className='flex flex-col p-3  justify-start items-center'>
-            <img className='w-36 rounded-3xl -mt-20' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de presentacion de Juan Camilo'></img>
-            <h1 className='text-2xl text-secondary-200 font-bold mx-4 my-6 text-center '>Juan Camilo <br></br> Palacio Anacona</h1>
+            <img className='w-36 absolute rounded-3xl blur-lg -mt-20 -z-0' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de presentacion de Juan Camilo Blur'></img>
+            <img className='w-36 rounded-3xl z-0 -mt-20' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de presentacion de Juan Camilo'></img>
+            <h1 className='text-2xl text-secondary-200 font-bold mx-4 my-6 text-center '> &lt;/ Juan Camilo <br></br> Palacio Anacona /&gt;</h1>
             <h3 className='text-xl font-semibold italic mx-4 my-6 mb-2'>Desarrollador Web Full-Stack</h3>
             <p className='text-[18px] m-4'>Mi mision es aportar soluciones integras y confiables aportando mis conocimientos.</p>
-            <button className=' mx-4 my-3 bg-secondary-300 text-sm rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
-              <a className='flex' href={`https://github.com/JuankAnacona`} target="blank" >GitHub&nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" strokeWidth={1.5} stroke="currentColor" viewBox="0 0 128 128" id="github"><g fill="#181616"><path fillRule="evenodd" fill="white" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" clipRule="evenodd"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g></svg>
-              </a>
-            </button>
+            <div className='inline'>
 
-            <button className=' mx-4 mt-2 mb-6 text-sm bg-secondary-300 rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
-              <a className='flex' href={`${process.env.PUBLIC_URL}/cvjuank.pdf`} download="cvjuank.pdf" >Descargar CV &nbsp;
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                </svg></a>
+              <button className=' mx-4 my-3 bg-secondary-300 text-sm rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
+                <a className='flex' href={`https://github.com/JuankAnacona`} target="blank" >GitHub&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" strokeWidth={1.5} stroke="currentColor" viewBox="0 0 128 128" id="github"><g fill="#181616"><path fillRule="evenodd" fill="white" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" clipRule="evenodd"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g></svg>
+                </a>
+              </button>
 
-            </button>
+              <button className=' mx-4 mt-2 mb-6 text-sm bg-secondary-300 rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
+                <a className='flex' href={`${process.env.PUBLIC_URL}/cvjuank.pdf`} download="cvjuank.pdf" >Descargar CV &nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg></a>
+
+              </button>
+            </div>
           </div>
         </section>
         {/* PROYECTOS*/}
         <section className='border-2 shadow-def m-9 rounded-xl shadow-secondary-100 '>
           <div className='flex flex-col p-3 justify-start items-center'>
-            <h1 className='text-2xl text-secondary-200 font-bold m-4 text-center border-b-2 '>Mis proyectos Importantes</h1>
+            <h1 className='text-2xl text-secondary-200 font-bold m-4 text-center  '>Mis proyectos </h1>
             <div id='cards-proyects'>
               {/* PROYECTO 1*/}
               <div href="#" className=" mx-4 my-6 flex flex-col items-center border  rounded-lg shadow md:flex-row md:max-w-xl border-gray-700 bg-secondary-700 hover:bg-secondary-650">
@@ -132,56 +188,50 @@ function App() {
         <section className='border-2 shadow-def m-9 rounded-xl shadow-secondary-100 '>
 
           <h1 className='text-2xl text-secondary-200 font-bold m-4 text-center  '>Tecnologias</h1>
-          <div id='etiquetas_techs' className='flex flex-wrap flex-row justify-around mx-4'>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Angular" src={`${process.env.PUBLIC_URL}/icons/angular.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">Angular</span>
-            </span>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Firebase" src={`${process.env.PUBLIC_URL}/icons/firebase.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">Firebase</span>
-            </span>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Angular" src={`${process.env.PUBLIC_URL}/icons/node-js.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">Nodejs</span>
-            </span>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Angular" src={`${process.env.PUBLIC_URL}/icons/mongodb.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">Mongo</span>
-            </span>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Angular" src={`${process.env.PUBLIC_URL}/icons/react.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">React</span>
-            </span>
-            <span
-              className="bg-secondary-700 flex flex-col text-white py-0.5 px-3  items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-              <img
-                alt="Icono de Angular" src={`${process.env.PUBLIC_URL}/icons/oracle.svg`} decoding="async"
-                data-nimg="1" className="object-cover w-6 h-6 my-3" loading="lazy"
-              />
-              <span className=" leading-5 mb-2 text-xs lg:inline">Oracle</span>
-            </span>
-
+          <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Frontend</h3>
+          <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
+            {tec_front.map((tecnologia) => {
+              return (
+                <span
+                  className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
+                  <img
+                    alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
+                    data-nimg="1" className="object-cover w-6 h-6 my-3 " loading="lazy"
+                  />
+                  <span className=" leading-5 mb-2 text-xs lg:inline">{tecnologia.nombre}</span>
+                </span>
+              )
+            })}
+          </div>
+          <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Backend</h3>
+          <div id='etiquetas_tec_back' className='flex flex-wrap flex-row justify-around mx-4 '>
+            {tec_back.map((tecnologia) => {
+              return (
+                <span
+                  className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
+                  <img
+                    alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
+                    data-nimg="1" className="object-cover w-6 h-6 my-3 " loading="lazy"
+                  />
+                  <span className=" leading-5 mb-2 text-xs lg:inline">{tecnologia.nombre}</span>
+                </span>
+              )
+            })}
+          </div>
+          <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Bases de Datos</h3>
+          <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
+            {tec_bd.map((tecnologia) => {
+              return (
+                <span
+                  className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
+                  <img
+                    alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
+                    data-nimg="1" className="object-cover w-6 h-6 my-3 " loading="lazy"
+                  />
+                  <span className=" leading-5 mb-2 text-xs lg:inline">{tecnologia.nombre}</span>
+                </span>
+              )
+            })}
           </div>
         </section>
         <section className='border-2 shadow-def m-9 rounded-xl shadow-secondary-100 '>
