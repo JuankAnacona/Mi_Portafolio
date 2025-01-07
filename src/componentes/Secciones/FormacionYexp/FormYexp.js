@@ -39,6 +39,13 @@ function FormyExp() {
                     <h3 className="font-medium italic leading-tight text-secondary-150 mb-2">Desarrollador Web Fullstack - Sstrategy Fintech  </h3>
                     <p className="text-sm">Desarrollo de visores para entidades bancarias con tecnologias como Angular, React, MySQL y SpringBoot</p>
                 </li>
+                <li className="ms-6 mx-4">
+                    <span className="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4  ring-secondary-700 bg-secondary-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="work"><path fill="none" d="M0 0h24v24H0V0z"></path><path fill="white" d="M14 6V4h-4v2h4zM4 9v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1zm16-3c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z"></path></svg>
+                    </span>
+                    <h3 className="font-medium italic leading-tight text-secondary-150 mb-2">Desarrollador Web Fullstack - Indra Sistemas &#40;Actualidad&#41; </h3>
+                    <p className="text-sm">Desarrollo para Sector Defensa</p>
+                </li>
             </ol>
 
         </section>
