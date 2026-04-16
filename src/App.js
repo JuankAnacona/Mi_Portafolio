@@ -20,28 +20,29 @@ function App() {
         <Nav></Nav>
       </header>
 
-      <div className='flex-col justify-center py-2 mb-10 mt-24 md:grid md:grid-rows-[repeat(4, minmax(0, auto))] md:grid-cols-7'>
-        {/* PRESENTACION*/}
+      <div className='max-w-[1400px] mx-auto px-4 py-2 mb-10 mt-24 grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8'>
+        {/* PRESENTACION (Fila 1 Izq) */}
         <Presentacion />
-        {/* PROYECTOS*/}
+        
+        {/* PROYECTOS (Fila 1 Der) */}
         <Proyectos />
 
-
-        {/* TECNOLOGIAS*/}
+        {/* TECNOLOGIAS (Fila 2 Izq) */}
         <Tecnologias />
-        {/* FORMACION Y EXP*/}
+        
+        {/* FORMACION Y EXP (Fila 2 Der) */}
         <FormyExp />
         
-        {/* LOGROS */}
-        <Logros />
-
-        {/*IDIOMAS*/}
-        <Idiomas />
-        
-        {/*SOBRE MI*/}
+        {/* SOBRE MI (Fila 3 Izq) */}
         <SobreMi />
+
+        {/* IDIOMAS (Fila 3 Der) */}
+        <Idiomas />
+
+        {/* LOGROS (Fila 4 Full) */}
+        <Logros />
         
-        {/* HOW I WORK */}
+        {/* HOW I WORK (Fila 5 Full) */}
         <HowIWork />
       </div>
 

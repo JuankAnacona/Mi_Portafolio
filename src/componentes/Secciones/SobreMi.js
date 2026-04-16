@@ -1,6 +1,6 @@
 function SobreMi() {
     return (
-        <section id="sec_sobremi" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary/90 to-secondary-700/40 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-9 md:m-4 rounded-2xl md:col-start-1 md:col-end-5 md:row-start-3 md:row-end-4 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
+        <section id="sec_sobremi" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary/90 to-secondary-700/40 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl md:col-span-8 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
             {/* Decorative background element */}
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-secondary-300 rounded-full mix-blend-screen filter blur-[120px] opacity-20"></div>
 

@@ -1,6 +1,6 @@
 function HowIWork() {
     return (
-        <section id="sec_howiwork" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary to-secondary-700/30 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-9 md:m-4 rounded-2xl md:col-start-1 md:col-end-8 md:row-start-4 md:row-end-5 p-6 lg:p-10 mb-16'>
+        <section id="sec_howiwork" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary to-secondary-700/30 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl md:col-span-12 p-6 lg:p-10 mb-16'>
             <div className="absolute top-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-secondary-300/50 to-transparent"></div>
             
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-12 text-center tracking-tight'>

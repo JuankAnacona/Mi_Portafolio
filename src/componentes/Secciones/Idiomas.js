@@ -1,6 +1,6 @@
 function Idiomas() {
     return (
-        <section id="sec_idiomas" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-secondary-700/60 to-primary/80 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-9 md:m-4 rounded-2xl md:col-start-5 md:col-end-8 md:row-start-3 md:row-end-4 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
+        <section id="sec_idiomas" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-secondary-700/60 to-primary/80 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl md:col-span-4 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-8 tracking-tight'>
                 Idiomas
             </h1>

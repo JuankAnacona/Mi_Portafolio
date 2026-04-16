@@ -1,6 +1,6 @@
 function FormyExp() {
     return (
-        <section id="sec_formyexp" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary/80 to-secondary-700/30 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-9 md:m-4 rounded-2xl md:col-start-4 md:col-end-8 md:row-start-2 md:row-end-3 p-4 lg:p-6'>
+        <section id="sec_formyexp" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-primary/80 to-secondary-700/30 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl md:col-span-7 p-4 lg:p-6'>
 
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold m-4 md:mt-4 text-center tracking-tight'>Formación Académica</h1>
 

@@ -1,6 +1,6 @@
 function Presentacion() {
     return (
-        <section className='relative border border-secondary-300/20 bg-gradient-to-b from-secondary-700/40 to-primary/80 backdrop-blur-xl shadow-[0_0_40px_rgba(122,80,255,0.15)] m-9 md:m-4 mt-20 md:mt-24 rounded-2xl md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:sticky md:top-32 h-fit transition-transform hover:-translate-y-1 duration-500'>
+        <section className='relative border border-secondary-300/20 bg-gradient-to-b from-secondary-700/40 to-primary/80 backdrop-blur-xl shadow-[0_0_40px_rgba(122,80,255,0.15)] m-0 mt-16 md:mt-10 md:col-span-5 h-fit transition-transform hover:-translate-y-1 duration-500 rounded-2xl'>
             {/* Glowing Orb Background (Simplified to avoid overflow issues) */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-32 bg-secondary-300/20 rounded-t-full filter blur-[80px] -z-10"></div>
             
