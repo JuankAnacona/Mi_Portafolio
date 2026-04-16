@@ -1,62 +1,53 @@
 function Tecnologias() {
-
-    const techs = [[{ nombre: 'Angular', img: 'angular.svg' },
-    { nombre: 'React', img: 'react.svg' }, { nombre: 'Tailwind', img: 'tailwind-css.svg' }],
-    [{ nombre: 'Java', img: 'java.svg' }, { nombre: 'Nodejs', img: 'node-js.svg' }],
-    [{ nombre: 'Mongo', img: 'mongodb.svg' },
-    { nombre: 'Firebase', img: 'firebase.svg' },
-    { nombre: 'Oracle', img: 'oracle.svg' }],
-    [{ nombre: 'Git', img: 'git.svg' }]
-    ];
     return (
-        <section id="sec_tecnologias" className='border shadow-def m-9 md:m-4 rounded-xl shadow-secondary-100 md:col-start-1 md:col-end-4 md:row-start-2 md:row-end-3 '>
+        <section id="sec_tecnologias" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-tr from-primary/90 to-secondary-700/50 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-9 md:m-4 rounded-2xl md:col-start-1 md:col-end-4 md:row-start-2 md:row-end-3 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
+            <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-8 text-center tracking-tight'>
+                Skills & Expertise
+            </h1>
+            
+            <div className="space-y-8">
+                <div className="relative">
+                    <div className="absolute -left-4 top-2 w-1 h-8 bg-secondary-300 rounded-r-md"></div>
+                    <h3 className='text-xl text-white font-semibold mb-4 flex items-center gap-3'>
+                        <span className="bg-secondary-700/50 p-2 rounded-lg border border-secondary-300/20 shadow-inner">🧠</span> 
+                        Engineering
+                    </h3>
+                    <div className='flex flex-wrap gap-2.5'>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Arquitectura de software</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Sistemas distribuidos</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Patrones de diseño</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Clean Code</span>
+                    </div>
+                </div>
 
-            <h1 className='text-2xl text-secondary-200 font-bold m-4 mt-8 text-center  md:text-3xl'>Tecnologias</h1>
-            <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Frontend</h3>
-            <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
-                {techs[0].map((tecnologia) => {
-                    return (
-                        <span
-                            className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-                            <img
-                                alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
-                                data-nimg="1" className="object-cover w-6 h-6 my-3 md:w-16 md:h-16" loading="lazy"
-                            />
-                            <span className=" leading-5 mb-2 text-xs md:text-base lg:inline">{tecnologia.nombre}</span>
-                        </span>
-                    )
-                })}
+                <div className="relative">
+                    <div className="absolute -left-4 top-2 w-1 h-8 bg-secondary-250 rounded-r-md"></div>
+                    <h3 className='text-xl text-white font-semibold mb-4 flex items-center gap-3'>
+                        <span className="bg-secondary-700/50 p-2 rounded-lg border border-secondary-300/20 shadow-inner">🧪</span> 
+                        Testing & Systems
+                    </h3>
+                    <div className='flex flex-wrap gap-2.5'>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Testing de integración</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Redes aplicadas</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Entornos complejos críticos</span>
+                    </div>
+                </div>
+
+                <div className="relative">
+                    <div className="absolute -left-4 top-2 w-1 h-8 bg-secondary-200 rounded-r-md"></div>
+                    <h3 className='text-xl text-white font-semibold mb-4 flex items-center gap-3'>
+                        <span className="bg-secondary-700/50 p-2 rounded-lg border border-secondary-300/20 shadow-inner">🤖</span> 
+                        Innovation
+                    </h3>
+                    <div className='flex flex-wrap gap-2.5'>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Integración de IA</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Model Context Protocol (MCP)</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Desarrollo de tooling interno</span>
+                        <span className="bg-secondary-700/40 text-secondary-100 py-1.5 px-4 text-sm border-secondary-300/30 border rounded-xl hover:bg-secondary-300/20 hover:border-secondary-300/50 transition-all cursor-default backdrop-blur-sm">Automatización</span>
+                    </div>
+                </div>
             </div>
-            <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Backend</h3>
-            <div id='etiquetas_tec_back' className='flex flex-wrap flex-row justify-around mx-4 '>
-                {techs[1].map((tecnologia) => {
-                    return (
-                        <span
-                            className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-                            <img
-                                alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
-                                data-nimg="1" className="object-cover w-6 h-6 my-3 md:w-16 md:h-16 " loading="lazy"
-                            />
-                            <span className=" leading-5 mb-2 text-xs md:text-base lg:inline">{tecnologia.nombre}</span>
-                        </span>
-                    )
-                })}
-            </div>
-            <h3 className='text-lg text-secondary-100 m-4 border-b-2 border-secondary-100 '>Bases de Datos</h3>
-            <div id='etiquetas_tec_front' className='flex flex-wrap flex-row justify-around mx-4 '>
-                {techs[2].map((tecnologia) => {
-                    return (
-                        <span
-                            className="bg-secondary-700 flex flex-col text-white py-0.5 px-3 basis-[30%] bas items-center justify-between text-sm border-secondary-250 border rounded-xl hover:bg-gray-gray1 mb-4 ">
-                            <img
-                                alt={`Icono de ${tecnologia.nombre} extraido de public`} src={`${process.env.PUBLIC_URL}/icons/${tecnologia.img}`} decoding="async"
-                                data-nimg="1" className="object-cover w-6 h-6 my-3  md:w-16 md:h-16 " loading="lazy"
-                            />
-                            <span className=" leading-5 mb-2 text-xs md:text-base lg:inline">{tecnologia.nombre}</span>
-                        </span>
-                    )
-                })}
-            </div>
-        </section>)
+        </section>
+    );
 };
 export default Tecnologias;

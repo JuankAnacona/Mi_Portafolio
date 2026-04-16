@@ -1,27 +1,40 @@
 function Presentacion() {
     return (
-        <section className='border shadow-def m-9 md:m-4  rounded-xl shadow-secondary-100 min-h-[400px] md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 '>
-            <div className='flex flex-col p-3  justify-start items-center'>
-                <img className='w-36 absolute rounded-3xl blur-lg -mt-20 md:-mt-0 -z-0' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de presentacion de Juan Camilo Blur'></img>
-                <img className='w-36 rounded-3xl z-0 -mt-20 md:-mt-0' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de presentacion de Juan Camilo'></img>
-                <h1 className='text-2xl text-secondary-200 font-bold mx-4 my-6 text-center md:text-3xl'> &lt;/ Juan Camilo <br></br> Palacio Anacona /&gt;</h1>
-                <h3 className='text-xl font-semibold italic mx-4 my-6 mb-2'>Desarrollador Web Full-Stack</h3>
-                <p className='text-[18px] m-4'>Mi mision es aportar soluciones integras y confiables aportando mis conocimientos.</p>
-                <div className='inline'>
+        <section className='relative border border-secondary-300/20 bg-gradient-to-b from-secondary-700/40 to-primary/80 backdrop-blur-xl shadow-[0_0_40px_rgba(122,80,255,0.15)] m-9 md:m-4 mt-20 md:mt-24 rounded-2xl md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-2 md:sticky md:top-32 h-fit transition-transform hover:-translate-y-1 duration-500'>
+            {/* Glowing Orb Background (Simplified to avoid overflow issues) */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-32 bg-secondary-300/20 rounded-t-full filter blur-[80px] -z-10"></div>
+            
+            <div className='relative flex flex-col p-6 lg:p-10 justify-start items-center text-center z-10'>
+                <div className="relative group mb-4">
+                    {/* Shadow/Glow effect behind photo */}
+                    <div className='w-40 h-40 absolute rounded-full bg-secondary-300/40 blur-2xl -mt-20 lg:-mt-24 left-1/2 -translate-x-1/2 group-hover:bg-secondary-200/50 transition-colors duration-500'></div>
+                    
+                    <img className='w-40 h-40 object-cover rounded-full z-10 relative -mt-20 lg:-mt-24 border-4 border-primary shadow-2xl group-hover:border-secondary-300 transition-all duration-300' src={`${process.env.PUBLIC_URL}/FotoPresentacion.png`} alt='Foto de Juan Camilo'></img>
+                </div>
+                
+                <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mx-4 mt-6 mb-2 tracking-tight'>
+                    Software Engineer & Technical Leader
+                </h1>
+                
+                <h3 className='text-lg lg:text-xl font-light mx-4 my-4 text-gray-300 leading-relaxed max-w-sm'>
+                    Diseño y lidero sistemas complejos en el sector Defensa, asegurando calidad, arquitectura y buenas prácticas.
+                </h3>
+                
+                <div className='flex flex-wrap justify-center gap-3 my-4 font-medium text-sm text-secondary-200 bg-secondary-700/30 py-2 px-4 rounded-full border border-secondary-300/10'>
+                    <span>Team Lead @ Indra</span>
+                    <span className="opacity-50">•</span>
+                    <span>Proyecto europeo ACHILE</span>
+                    <span className="opacity-50">•</span>
+                    <span>PR Reviewer & Clean Code</span>
+                </div>
 
-                    <button className=' mx-4 my-3 bg-secondary-300 text-sm rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
-                        <a className='flex' href={`https://github.com/JuankAnacona`} target="blank" >GitHub&nbsp;
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" strokeWidth={1.5} stroke="currentColor" viewBox="0 0 128 128" id="github"><g fill="#181616"><path fillRule="evenodd" fill="white" d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z" clipRule="evenodd"></path><path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm-.743-.55M28.93 94.535c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zm-.575-.618M31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm0 0M34.573 101.373c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm0 0M39.073 103.324c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm0 0M44.016 103.685c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm0 0M48.614 102.903c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path></g></svg>
-                        </a>
-                    </button>
-
-                    <button className=' mx-4 mt-2 mb-6 text-sm bg-secondary-300 rounded-2xl p-2 px-2 hover:scale-110 hover:bg-secondary-250 transition ease-in-out  duration-300'>
-                        <a className='flex' href={`${process.env.PUBLIC_URL}/cvjuank.pdf`} download="cvjuank.pdf" >Descargar CV &nbsp;
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                            </svg></a>
-
-                    </button>
+                <div className='flex flex-col w-full sm:flex-row justify-center gap-4 mt-8'>
+                    <a href="#sec_formyexp" className='w-full sm:w-auto bg-gradient-to-r from-secondary-300 to-secondary-250 text-white font-semibold text-sm rounded-xl py-3 px-6 hover:scale-105 hover:shadow-[0_0_20px_rgba(122,80,255,0.4)] transition-all duration-300'>
+                        Ver experiencia
+                    </a>
+                    <a href="#sec_proyectos" className='w-full sm:w-auto bg-transparent border border-secondary-300 text-white font-semibold text-sm rounded-xl py-3 px-6 hover:bg-secondary-300/10 hover:scale-105 transition-all duration-300'>
+                        Ver proyectos clave
+                    </a>
                 </div>
             </div>
         </section>

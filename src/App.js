@@ -7,6 +7,8 @@ import Tecnologias from './componentes/Secciones/Tecnologias/Tecnologias';
 import FormyExp from './componentes/Secciones/FormacionYexp/FormYexp';
 import Idiomas from './componentes/Secciones/Idiomas';
 import SobreMi from './componentes/Secciones/SobreMi';
+import Logros from './componentes/Secciones/Logros';
+import HowIWork from './componentes/Secciones/HowIWork';
 function App() {
 
 
@@ -28,12 +30,19 @@ function App() {
         {/* TECNOLOGIAS*/}
         <Tecnologias />
         {/* FORMACION Y EXP*/}
-
         <FormyExp />
+        
+        {/* LOGROS */}
+        <Logros />
+
         {/*IDIOMAS*/}
         <Idiomas />
+        
         {/*SOBRE MI*/}
         <SobreMi />
+        
+        {/* HOW I WORK */}
+        <HowIWork />
       </div>
 
     </div>
