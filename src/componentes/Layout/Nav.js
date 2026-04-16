@@ -1,10 +1,11 @@
 function Nav() {
     return (
         <nav
-            className="fixed top-0 z-50 w-full px-4 py-3 bg-[#07001B]/80 border-b border-secondary-300/10 backdrop-blur-lg lg:px-8 shadow-lg shadow-black/20">
+            className="fixed top-0 z-50 w-full px-4 py-2 bg-[#07001B]/80 border-b border-secondary-300/10 backdrop-blur-lg lg:px-8 shadow-lg shadow-black/20">
             <div className="flex items-center justify-between mx-auto max-w-7xl">
                 <a href="#df"
-                    className="mr-4 block cursor-pointer py-1.5 text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-secondary-200 transition-transform hover:scale-105">
+                    className="flex items-center gap-3 mr-4 block cursor-pointer py-1.5 text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-secondary-200 transition-transform hover:scale-105">
+                    <img src="./favicon_jk.png" alt="JK Logo" className="w-10 h-10 rounded-lg shadow-lg" />
                     JuanK
                 </a>
                 <div className="flex items-center gap-4">
