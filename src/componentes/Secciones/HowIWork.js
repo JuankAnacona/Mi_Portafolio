@@ -7,28 +7,32 @@ function HowIWork() {
                 How I Work
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group">
+                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                    <div className="absolute right-0 bottom-0 text-[10rem] font-bold text-secondary-300/5 -z-10 leading-none">1</div>
                     <div className="w-10 h-10 rounded-lg bg-secondary-700 border border-secondary-300/30 flex items-center justify-center text-secondary-100 font-bold mb-4 shadow-inner group-hover:bg-secondary-300 group-hover:text-white transition-colors">1</div>
                     <h3 className="text-xl font-bold text-white mb-3">Pienso en sistemas</h3>
                     <p className="text-sm text-gray-300 font-light leading-relaxed">
                         No construyo funcionalidades aisladas. Diseño soluciones escalables que encajen dentro de una arquitectura global robusta.
                     </p>
                 </div>
-                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group">
+                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                    <div className="absolute right-0 bottom-0 text-[10rem] font-bold text-secondary-300/5 -z-10 leading-none">2</div>
                     <div className="w-10 h-10 rounded-lg bg-secondary-700 border border-secondary-300/30 flex items-center justify-center text-secondary-100 font-bold mb-4 shadow-inner group-hover:bg-secondary-300 group-hover:text-white transition-colors">2</div>
                     <h3 className="text-xl font-bold text-white mb-3">Calidad innegociable</h3>
                     <p className="text-sm text-gray-300 font-light leading-relaxed">
                         El código debe ser mantenible y legible. Como PR Reviewer, aseguro que los estándares de clean code sean cumplidos siempre.
                     </p>
                 </div>
-                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group">
+                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                    <div className="absolute right-0 bottom-0 text-[10rem] font-bold text-secondary-300/5 -z-10 leading-none">3</div>
                     <div className="w-10 h-10 rounded-lg bg-secondary-700 border border-secondary-300/30 flex items-center justify-center text-secondary-100 font-bold mb-4 shadow-inner group-hover:bg-secondary-300 group-hover:text-white transition-colors">3</div>
                     <h3 className="text-xl font-bold text-white mb-3">Lidero desde lo técnico</h3>
                     <p className="text-sm text-gray-300 font-light leading-relaxed">
                         Más allá de coordinar, tomo decisiones estructurales, guío al equipo y establezco una línea base de excelencia.
                     </p>
                 </div>
-                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group">
+                <div className="p-6 border border-secondary-300/20 rounded-xl bg-gradient-to-b from-secondary-800/80 to-primary shadow-lg hover:shadow-[0_0_25px_rgba(122,80,255,0.2)] hover:-translate-y-1 transition-all duration-300 group relative overflow-hidden">
+                    <div className="absolute right-0 bottom-0 text-[10rem] font-bold text-secondary-300/5 -z-10 leading-none">4</div>
                     <div className="w-10 h-10 rounded-lg bg-secondary-700 border border-secondary-300/30 flex items-center justify-center text-secondary-100 font-bold mb-4 shadow-inner group-hover:bg-secondary-300 group-hover:text-white transition-colors">4</div>
                     <h3 className="text-xl font-bold text-white mb-3">Simplifico lo complejo</h3>
                     <p className="text-sm text-gray-300 font-light leading-relaxed">

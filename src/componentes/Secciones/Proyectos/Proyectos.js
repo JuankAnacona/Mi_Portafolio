@@ -1,5 +1,6 @@
 import CardProyecto from "./CardProyecto";
 import CardOdonto from "./CardOdonto";
+import CardAgapea from "./CardAgapea";
 
 function Proyectos() {
     return (
@@ -17,9 +18,15 @@ function Proyectos() {
                         <div className="absolute inset-x-12 -top-6 border-t border-secondary-300/20"></div>
                         <CardOdonto />
                     </div>
+
+                    {/* PROYECTO 3 - AGAPEA */}
+                    <div className="mt-12 relative flex flex-col items-center">
+                        <div className="absolute inset-x-12 -top-6 border-t border-secondary-300/20"></div>
+                        <CardAgapea />
+                    </div>
                 </div>
             </div>
         </section>
     );
 };
-export default Proyectos;
+export default Proyectos;

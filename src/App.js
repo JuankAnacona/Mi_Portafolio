@@ -9,6 +9,8 @@ import Idiomas from './componentes/Secciones/Idiomas';
 import SobreMi from './componentes/Secciones/SobreMi';
 import Logros from './componentes/Secciones/Logros';
 import HowIWork from './componentes/Secciones/HowIWork';
+import TechTicker from './componentes/Layout/TechTicker';
+
 function App() {
 
 
@@ -46,6 +48,7 @@ function App() {
         <HowIWork />
       </div>
 
+      <TechTicker />
     </div>
   );
 
