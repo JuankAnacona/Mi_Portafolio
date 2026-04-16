@@ -39,7 +39,7 @@ function Tecnologias() {
     ];
 
     return (
-        <section id="sec_tecnologias" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-tr from-primary/90 to-secondary-700/50 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl md:col-span-12 lg:col-span-5 p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
+        <section id="sec_tecnologias" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-tr from-primary/90 to-secondary-700/50 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-10 text-center tracking-tight'>
                 Stack Tecnológico
             </h1>

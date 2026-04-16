@@ -10,6 +10,7 @@ import SobreMi from './componentes/Secciones/SobreMi';
 import Logros from './componentes/Secciones/Logros';
 import HowIWork from './componentes/Secciones/HowIWork';
 import TechTicker from './componentes/Layout/TechTicker';
+import Liderazgo from './componentes/Secciones/Liderazgo';
 
 function App() {
 
@@ -22,30 +23,27 @@ function App() {
         <Nav></Nav>
       </header>
 
-      <div className='max-w-[1400px] mx-auto px-4 py-2 mb-10 mt-24 grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8'>
-        {/* PRESENTACION (Fila 1 Izq) */}
-        <Presentacion />
+      <div className='max-w-[1400px] mx-auto px-4 py-2 mb-10 mt-24 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start'>
+        {/* COLUMNA IZQUIERDA (Desktop) */}
+        <div className='lg:col-span-5 flex flex-col gap-6 lg:gap-8'>
+          <Presentacion />
+          <Tecnologias />
+          <SobreMi />
+          <Liderazgo />
+          <Idiomas />
+        </div>
         
-        {/* PROYECTOS (Fila 1 Der) */}
-        <Proyectos />
+        {/* COLUMNA DERECHA (Desktop) */}
+        <div className='lg:col-span-7 flex flex-col gap-6 lg:gap-8'>
+          <Proyectos />
+          <FormyExp />
+        </div>
 
-        {/* TECNOLOGIAS (Fila 2 Izq) */}
-        <Tecnologias />
-        
-        {/* FORMACION Y EXP (Fila 2 Der) */}
-        <FormyExp />
-        
-        {/* SOBRE MI (Fila 3 Izq) */}
-        <SobreMi />
-
-        {/* IDIOMAS (Fila 3 Der) */}
-        <Idiomas />
-
-        {/* LOGROS (Fila 4 Full) */}
-        <Logros />
-        
-        {/* HOW I WORK (Fila 5 Full) */}
-        <HowIWork />
+        {/* SECCIONES ANCHURA COMPLETA */}
+        <div className='lg:col-span-12 flex flex-col gap-6 lg:gap-8'>
+          <Logros />
+          <HowIWork />
+        </div>
       </div>
 
       <TechTicker />
