@@ -14,14 +14,14 @@ function Proyectos() {
                     <CardProyecto />
                     
                     {/* PROYECTO 2 - ODONTOLOGÍA */}
-                    <div className="mt-12 relative flex flex-col items-center">
-                        <div className="absolute inset-x-12 -top-6 border-t border-secondary-300/20"></div>
+                    <div className="mt-8 relative flex flex-col items-center">
+                        <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
                         <CardOdonto />
                     </div>
 
                     {/* PROYECTO 3 - AGAPEA */}
-                    <div className="mt-12 relative flex flex-col items-center">
-                        <div className="absolute inset-x-12 -top-6 border-t border-secondary-300/20"></div>
+                    <div className="mt-8 relative flex flex-col items-center">
+                        <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
                         <CardAgapea />
                     </div>
                 </div>
