@@ -1,6 +1,7 @@
 import CardProyecto from "./CardProyecto";
 import CardOdonto from "./CardOdonto";
 import CardAgapea from "./CardAgapea";
+import CardKlvTs from "./CardKlvTs";
 
 function Proyectos() {
     return (
@@ -24,9 +25,15 @@ function Proyectos() {
                         <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
                         <CardAgapea />
                     </div>
+
+                    {/* PROYECTO 4 - KLV TS */}
+                    <div className="mt-8 relative flex flex-col items-center">
+                        <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
+                        <CardKlvTs />
+                    </div>
                 </div>
             </div>
         </section>
     );
 };
-export default Proyectos;
+export default Proyectos;
