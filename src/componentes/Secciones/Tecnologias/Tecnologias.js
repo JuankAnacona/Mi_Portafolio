@@ -1,7 +1,11 @@
+import { useLanguage } from '../../../context/LanguageContext';
+
 function Tecnologias() {
+    const { t } = useLanguage();
+
     const categories = [
         {
-            title: "Engineering & Backend",
+            title: t.tecnologias.backendTitle,
             icon: (
                 <svg className="w-5 h-5 text-secondary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
@@ -12,12 +16,12 @@ function Tecnologias() {
                 { name: "Java", class: "devicon-java-plain" },
                 { name: "Spring Boot", class: "devicon-spring-plain" },
                 { name: ".NET", class: "devicon-dot-net-plain" },
-                { name: "Arquitectura", class: null },
-                { name: "Sistemas Distribuidos", class: null }
+                { name: t.tecnologias.architecture, class: null },
+                { name: t.tecnologias.distributedSystems, class: null }
             ]
         },
         {
-            title: "Fullstack & Web",
+            title: t.tecnologias.fullstackTitle,
             icon: (
                 <svg className="w-5 h-5 text-secondary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -34,7 +38,7 @@ function Tecnologias() {
             ]
         },
         {
-            title: "DevOps & Infrastructure",
+            title: t.tecnologias.devopsTitle,
             icon: (
                 <svg className="w-5 h-5 text-secondary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -53,7 +57,7 @@ function Tecnologias() {
     return (
         <section id="sec_tecnologias" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-tr from-primary/90 to-secondary-700/50 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-10 text-center tracking-tight'>
-                Stack Tecnológico
+                {t.tecnologias.title}
             </h1>
             
             <div className="space-y-10">

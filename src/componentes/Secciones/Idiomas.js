@@ -1,8 +1,12 @@
+import { useLanguage } from '../../context/LanguageContext';
+
 function Idiomas() {
+    const { t } = useLanguage();
+
     return (
         <section id="sec_idiomas" className='relative overflow-hidden border border-secondary-300/20 bg-gradient-to-t from-secondary-700/60 to-primary/80 backdrop-blur-xl shadow-[0_0_30px_rgba(122,80,255,0.1)] m-0 rounded-2xl p-6 lg:p-8 hover:shadow-[0_0_40px_rgba(122,80,255,0.15)] transition-shadow duration-500'>
             <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mb-8 tracking-tight'>
-                Idiomas
+                {t.idiomas.title}
             </h1>
 
             <ol className="relative ml-6 lg:ml-8 border-s-2 mb-4 border-secondary-300/30">
@@ -10,13 +14,13 @@ function Idiomas() {
                     <span className="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-primary bg-secondary-300 shadow-[0_0_15px_rgba(122,80,255,0.5)] group-hover:scale-110 transition-transform">
                         <svg className="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="translate-language"><path fill="white" d="M7.01 10a.505.505 0 0 0 .405-.227.526.526 0 0 0 .055-.471c-.144-.396-.796-.396-.939 0l-.01.027a.504.504 0 0 0 .069.458.521.521 0 0 0 .42.213z"></path><path fill="white" d="M17.407 19.791a.496.496 0 0 0 .066-.452l-6.5-19A.5.5 0 0 0 10.5 0h-8A2.503 2.503 0 0 0 0 2.5v15C0 18.878 1.122 20 2.5 20H17a.5.5 0 0 0 .407-.209zM4.029 13.332l2.5-7c.142-.396.801-.396.942 0l2.5 7a.502.502 0 0 1-.302.639.503.503 0 0 1-.64-.302l-.834-2.336A.5.5 0 0 0 7.724 11H6.276a.5.5 0 0 0-.471.332l-.835 2.336a.504.504 0 0 1-.639.303.502.502 0 0 1-.302-.639zM16.312 12.626a.487.487 0 0 1 .151.185c.099.245.31.563.664.999a.499.499 0 0 0 .389.186h.016a.503.503 0 0 0 .392-.21c.476-.67.904-1.409 1.206-2.08a.503.503 0 0 0-.457-.706h-2.296a.5.5 0 0 0-.473.661l.253.741c.03.088.084.165.155.224z"></path><path fill="white" d="M21.5 4h-7.518a.5.5 0 0 0-.473.661l1.71 5c.07.203.26.339.473.339h.808a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-.695a.5.5 0 0 0-.478.354c-.303.989-.992 2.242-1.844 3.353a.5.5 0 0 0 .037.652 44.5 44.5 0 0 0 1.817 1.773.498.498 0 0 1 .031.705.512.512 0 0 1-.707.031c-.164-.15-.512-.473-.939-.888a.499.499 0 0 0-.822.52l.518 1.514A1.499 1.499 0 0 1 17 21h-4.25a.5.5 0 0 0-.468.675l.75 2A.5.5 0 0 0 13.5 24h8c1.378 0 2.5-1.122 2.5-2.5v-15C24 5.122 22.878 4 21.5 4z"></path></svg>
                     </span>
-                    <h3 className="font-bold text-white text-xl">Español <span className="font-normal text-secondary-150 text-base italic hidden sm:inline">- Nativo</span></h3>
+                    <h3 className="font-bold text-white text-xl">{t.idiomas.spanish} <span className="font-normal text-secondary-150 text-base italic hidden sm:inline">{t.idiomas.spanishLevel}</span></h3>
                 </li>
                 <li className="ms-8 group">
                     <span className="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-primary bg-secondary-700 border border-secondary-300/50 group-hover:bg-secondary-300 transition-colors shadow-[0_0_10px_rgba(122,80,255,0.2)]">
                         <svg className="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="translate-language"><path fill="white" d="M7.01 10a.505.505 0 0 0 .405-.227.526.526 0 0 0 .055-.471c-.144-.396-.796-.396-.939 0l-.01.027a.504.504 0 0 0 .069.458.521.521 0 0 0 .42.213z"></path><path fill="white" d="M17.407 19.791a.496.496 0 0 0 .066-.452l-6.5-19A.5.5 0 0 0 10.5 0h-8A2.503 2.503 0 0 0 0 2.5v15C0 18.878 1.122 20 2.5 20H17a.5.5 0 0 0 .407-.209zM4.029 13.332l2.5-7c.142-.396.801-.396.942 0l2.5 7a.502.502 0 0 1-.302.639.503.503 0 0 1-.64-.302l-.834-2.336A.5.5 0 0 0 7.724 11H6.276a.5.5 0 0 0-.471.332l-.835 2.336a.504.504 0 0 1-.639.303.502.502 0 0 1-.302-.639zM16.312 12.626a.487.487 0 0 1 .151.185c.099.245.31.563.664.999a.499.499 0 0 0 .389.186h.016a.503.503 0 0 0 .392-.21c.476-.67.904-1.409 1.206-2.08a.503.503 0 0 0-.457-.706h-2.296a.5.5 0 0 0-.473.661l.253.741c.03.088.084.165.155.224z"></path><path fill="white" d="M21.5 4h-7.518a.5.5 0 0 0-.473.661l1.71 5c.07.203.26.339.473.339h.808a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-.695a.5.5 0 0 0-.478.354c-.303.989-.992 2.242-1.844 3.353a.5.5 0 0 0 .037.652 44.5 44.5 0 0 0 1.817 1.773.498.498 0 0 1 .031.705.512.512 0 0 1-.707.031c-.164-.15-.512-.473-.939-.888a.499.499 0 0 0-.822.52l.518 1.514A1.499 1.499 0 0 1 17 21h-4.25a.5.5 0 0 0-.468.675l.75 2A.5.5 0 0 0 13.5 24h8c1.378 0 2.5-1.122 2.5-2.5v-15C24 5.122 22.878 4 21.5 4z"></path></svg>
                     </span>
-                    <h3 className="font-bold text-white text-xl">Ingles <span className="font-normal text-secondary-150 text-base italic hidden sm:inline">- Intermedio (B1/B2)</span></h3>
+                    <h3 className="font-bold text-white text-xl">{t.idiomas.english} <span className="font-normal text-secondary-150 text-base italic hidden sm:inline">{t.idiomas.englishLevel}</span></h3>
                 </li>
             </ol>
         </section>

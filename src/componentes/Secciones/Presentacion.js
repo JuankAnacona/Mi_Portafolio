@@ -1,4 +1,8 @@
+import { useLanguage } from '../../context/LanguageContext';
+
 function Presentacion() {
+    const { t } = useLanguage();
+
     return (
         <section className='relative border border-secondary-300/20 bg-gradient-to-b from-secondary-700/40 to-primary/80 backdrop-blur-xl shadow-[0_0_40px_rgba(122,80,255,0.15)] m-0 mt-16 md:mt-10 transition-transform hover:-translate-y-1 duration-500 rounded-2xl'>
             {/* Glowing Orb Background (Simplified to avoid overflow issues) */}
@@ -13,27 +17,27 @@ function Presentacion() {
                 </div>
                 
                 <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold mx-4 mt-6 mb-2 tracking-tight'>
-                    Software Engineer & Technical Leader
+                    {t.presentacion.title}
                 </h1>
                 
                 <h3 className='text-lg lg:text-xl font-light mx-4 my-4 text-gray-300 leading-relaxed max-w-sm'>
-                    Diseño y lidero sistemas complejos en el sector Defensa, asegurando calidad, arquitectura y buenas prácticas.
+                    {t.presentacion.subtitle}
                 </h3>
                 
                 <div className='flex flex-wrap justify-center gap-3 my-4 font-medium text-sm text-secondary-200 bg-secondary-700/30 py-2 px-4 rounded-full border border-secondary-300/10'>
-                    <span>Team Lead @ Indra</span>
+                    <span>{t.presentacion.badge1}</span>
                     <span className="opacity-50">•</span>
-                    <span>Proyecto europeo ACHILE</span>
+                    <span>{t.presentacion.badge2}</span>
                     <span className="opacity-50">•</span>
-                    <span>PR Reviewer & Clean Code</span>
+                    <span>{t.presentacion.badge3}</span>
                 </div>
 
                 <div className='flex flex-col w-full sm:flex-row justify-center gap-4 mt-8'>
                     <a href="#sec_formyexp" className='w-full sm:w-auto bg-gradient-to-r from-secondary-300 to-secondary-250 text-white font-semibold text-sm rounded-xl py-3 px-6 hover:scale-105 hover:shadow-[0_0_20px_rgba(122,80,255,0.4)] transition-all duration-300'>
-                        Ver experiencia
+                        {t.presentacion.btnExperience}
                     </a>
                     <a href="#sec_proyectos" className='w-full sm:w-auto bg-transparent border border-secondary-300 text-white font-semibold text-sm rounded-xl py-3 px-6 hover:bg-secondary-300/10 hover:scale-105 transition-all duration-300'>
-                        Ver proyectos clave
+                        {t.presentacion.btnProjects}
                     </a>
                 </div>
             </div>

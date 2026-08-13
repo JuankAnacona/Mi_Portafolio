@@ -1,8 +1,12 @@
+import { useLanguage } from '../../context/LanguageContext';
+
 function Liderazgo() {
+    const { t } = useLanguage();
+
     const pilares = [
         {
-            title: "Calidad & Code Review",
-            desc: "Garantizo la excelencia mediante revisiones exhaustivas y estándares de Clean Code, transformando el feedback en aprendizaje.",
+            title: t.liderazgo.pilar1Title,
+            desc: t.liderazgo.pilar1Desc,
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -11,8 +15,8 @@ function Liderazgo() {
             color: "from-blue-500/20 to-secondary-300/20"
         },
         {
-            title: "Arquitectura Escalable",
-            desc: "Diseño sistemas desacoplados y robustos, preparados para evolucionar y soportar cargas críticas en entornos exigentes.",
+            title: t.liderazgo.pilar2Title,
+            desc: t.liderazgo.pilar2Desc,
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -21,8 +25,8 @@ function Liderazgo() {
             color: "from-purple-500/20 to-secondary-300/20"
         },
         {
-            title: "Mentoría & Guía",
-            desc: "Facilito el crecimiento del equipo, eliminando bloqueos técnicos y fomentando una cultura de autonomía y responsabilidad.",
+            title: t.liderazgo.pilar3Title,
+            desc: t.liderazgo.pilar3Desc,
             icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -37,7 +41,7 @@ function Liderazgo() {
             <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-1 bg-secondary-200 rounded-full"></div>
                 <h1 className='text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-secondary-100 to-secondary-300 font-extrabold tracking-tight'>
-                    Pilares de Liderazgo
+                    {t.liderazgo.title}
                 </h1>
             </div>
 
@@ -67,7 +71,7 @@ function Liderazgo() {
                 <svg className="w-5 h-5 text-secondary-300/70 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
-                "El conocimiento sin compartir es conocimiento perdido."
+                {t.liderazgo.quote}
             </div>
         </section>
     );
