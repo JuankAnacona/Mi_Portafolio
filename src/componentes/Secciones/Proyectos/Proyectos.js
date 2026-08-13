@@ -2,6 +2,7 @@ import CardProyecto from "./CardProyecto";
 import CardOdonto from "./CardOdonto";
 import CardAgapea from "./CardAgapea";
 import CardKlvTs from "./CardKlvTs";
+import CardBusinessFinder from "./CardBusinessFinder";
 
 function Proyectos() {
     return (
@@ -13,7 +14,7 @@ function Proyectos() {
                 <div id='cards-proyects' className="w-full flex-col items-center mt-4">
                     {/* PROYECTO 1 - ESTRELLA */}
                     <CardProyecto />
-                    
+
                     {/* PROYECTO 2 - ODONTOLOGÍA */}
                     <div className="mt-8 relative flex flex-col items-center">
                         <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
@@ -30,6 +31,11 @@ function Proyectos() {
                     <div className="mt-8 relative flex flex-col items-center">
                         <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
                         <CardKlvTs />
+                    </div>
+                    {/* PROYECTO 5 - KLV TS */}
+                    <div className="mt-8 relative flex flex-col items-center">
+                        <div className="absolute inset-x-12 -top-4 border-t border-secondary-300/20"></div>
+                        <CardBusinessFinder />
                     </div>
                 </div>
             </div>
