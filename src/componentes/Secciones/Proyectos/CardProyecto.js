@@ -2,7 +2,11 @@ function CardProyecto() {
     return (
         <div className="mx-4 my-4 flex flex-col md:flex-row items-center bg-gradient-to-br from-secondary-700/80 to-primary border rounded-xl shadow-lg border-secondary-300/20 hover:border-secondary-300/50 hover:shadow-[0_0_30px_rgba(122,80,255,0.2)] lg:max-w-4xl transition-all duration-300 group overflow-hidden">
             <div className="md:w-1/3 bg-secondary-700/50 flex flex-col justify-center items-center p-6 border-b md:border-b-0 md:border-r border-secondary-300/10">
-                <span className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">🤖</span>
+                <div className="p-3 bg-secondary-300/10 border border-secondary-300/20 rounded-2xl mb-3 group-hover:scale-110 transition-transform duration-300 shadow-inner text-secondary-150">
+                    <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8.25 3v1.5M12 3v1.5M15.75 3v1.5M8.25 19.5V21M12 19.5V21M15.75 19.5V21M3 8.25h1.5M3 12h1.5M3 15.75h1.5M19.5 8.25H21M19.5 12H21M19.5 15.75H21M6.75 6.75h10.5v10.5H6.75V6.75z" />
+                    </svg>
+                </div>
                 <h5 className="text-lg font-bold text-center text-white group-hover:text-secondary-150 transition-colors">
                     MCP + AI System
                 </h5>
